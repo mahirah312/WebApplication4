@@ -1,0 +1,399 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Kitchen Appliances</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<!-- bootstrap -->
+		<link href="css/bootstrap1.css" rel="stylesheet">      
+		<link href="css/bootstrap2.css" rel="stylesheet">
+		
+		<link href="css/bootstrapindexpage.css" rel="stylesheet"/>
+		
+		<!--style-->
+		<link href="css/indexslider.css" rel="stylesheet"/>
+		<link href="css/indexmain.css" rel="stylesheet"/>
+
+		<!-- scripts -->
+		<script src="js/indexjs1.js"></script>
+		<script src="js/indexjs2.js"></script>				
+		<script src="js/indexjs3.js"></script>	
+		<script src="js/indexjs4.js"></script>
+	<asp:ContentPlaceHolder ID="HeadContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </head>
+	<body>
+        <form runat="server">
+            <span id="top"></span>
+        
+		<div id="top-bar" class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+
+		<div class="row">
+		<div class="span4">
+					<form method="POST" class="search_form">
+						<input type="text" class="input-block-level search-query" Placeholder="eg. Kitchen Appliances">
+					</form>
+				</div>
+				<div class="span8">
+					<div class="account pull-right">
+						<ul class="user-menu">				
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Your Cart</a></li>
+							<li><a href="#">Checkout</a></li>					
+							<li><a href="#">Login</a></li>		
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper" class="container">
+			<section class="navbar main-menu" style="left: 0px; top: 17px">
+				<div class="navbar-inner main-menu">				
+					<a href="index.html" class="logo pull-left">
+					<img src="images/index.jpg" alt="" height="33"></a>
+					<nav id="menu" class="pull-right">
+
+					<ul>
+															
+							<li><a href="./products.html">Kitchen</a></li>			
+							<li><a href="./products.html">Utensils</a>
+								<ul>									
+									<li><a href="./products.html">mashers ricers and steamers</a></li>
+									<li><a href="./products.html">weighing-and-measuring</a></li>
+									<li><a href="./products.html">Disk Rack</a></li>
+									<li><a href="./products.html">brushes and sponges</a></li>
+									<li><a href="./products.html">Chopping Board</a></li>
+									<li><a href="./products.html">Kitchen Utensils</a></li>
+
+									
+
+								</ul>
+							</li>							
+							<li><a href="./products.html">Range</a></li>
+							<li><a href="./products.html">Best Seller</a></li>
+							<li><a href="./products.html">Top Seller</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<section  class="homepage-slider" id="home-slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<img src="images/1340x560_chefkitchen._V278101525_.jpg" alt="" />
+						</li>
+						<li>
+							<img src="images/1340x560_recipe._V278101525_.jpg" alt="" />
+							<div class="intro">
+								<h1>Mid season sale</h1>
+								<p><span>Up to 50% Off</span></p>
+								<p><span>On selected items online and in stores</span></p>
+							</div>
+						</li>
+					</ul>
+				</div>			
+			</section>
+			<section class="header_text">
+				See how the Kitchen Appliances team continues to focus on great products,  
+				<br/>building expertise and delivering for our consumers...
+			</section>
+			<section class="main-content">
+				<div class="row">
+					<div class="span12">													
+						<div class="row">
+							<div class="span12">
+								<h4 class="title">
+									<span class="pull-left"><span class="text"><span class="line">Feature <strong>Products</strong></span></span></span>
+									<span class="pull-right">
+										<a class="left button" href="#myCarousel" data-slide="prev"></a><a class="right button" href="#myCarousel" data-slide="next"></a>
+									</span>
+								</h4>
+								<div id="myCarousel" class="myCarousel carousel slide">
+									<div class="carousel-inner">
+										<div class="active item">
+											<ul class="thumbnails">												
+												<li class="span3">
+													<div class="product-box">
+														<span class="sale_tag"></span>
+														<p><a href="product_detail.html"><img src="images/0457598_PE605377_S3.JPG" alt="" /></a></p>
+														<a href="product_detail.html" class="title">LUFTIG Exhaust hood, Stainless steel </a><br/>
+														<a href="products.html" class="category">Extractor hoods and filters</a>
+														<p class="price">$399.00</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<span class="sale_tag"></span>
+														<p><a href="product_detail.html"><img src="images/0324893_PE517257_S3.JPG" alt="" /></a></p>
+														<a href="product_detail.html" class="title">NUTID Side-by-side refrigerator</a><br/>
+														<a href="products.html" class="category">Refrigerator</a>
+														<p class="price">$1,799.00</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.html"><img src="images/0336830_PE528022_S3.JPG"" alt="" /></a></p>
+														<a href="product_detail.html" class="title"> RENLIG Built-in dishwasher with 3 fronts</a><br/>
+														<a href="products.html" class="category">Dishwasher</a>
+														<p class="price">$988.99</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.html"><img src="images/0307960_PE427952_S3.JPG" alt="" /></a></p>
+														<a href="product_detail.html" class="title">NUTID Slide-in range with ceramic cooktop</a><br/>
+														<a href="products.html" class="category">Cooktop</a>
+														<p class="price">$1,099.00</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="item">
+											<ul class="thumbnails">
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.html"><img src="images/Dispatcher.jpg" alt="" /></a></p>
+														<a href="product_detail.html" class="title">GE PROFILE series 30"</a><br/>
+														<a href="products.html" class="category">Warming Drawer</a>
+														<p class="price">$890.00</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.html"><img src="images/freezer.jpg" alt="" /></a></p>
+														<a href="product_detail.html" class="title">GE ENERGY Star 10.6 cu ft.manual defrost</a><br/>
+														<a href="products.html" class="category">Chest Freezer</a>
+														<p class="price">$1,900.00</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.html"><img src="images/0340632_PE527646_S3.JPG" alt="" /></a></p>
+														<a href="product_detail.html" class="title">NUTID Microwave Owen</a><br/>
+														<a href="products.html" class="category">Microwave Owen</a>
+														<p class="price">$699.99</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.html"><img src="images/elevate-4pc-kitchen-tool-set-multi-co1_1.jpg" alt="" /></a></p>
+														<a href="product_detail.html" class="title">Elevate set 4-pieces kitchen utensils set</a><br/>
+														<a href="products.html" class="category">Kitchen Utensils</a>
+														<p class="price">$35.50</p>
+													</div>
+												</li>																																	
+											</ul>
+										</div>
+									</div>							
+								</div>
+							</div>						
+						</div>
+						<br/>
+						<div class="row">
+							<div class="span12">
+								<h4 class="title">
+									<span class="pull-left"><span class="text"><span class="line">Latest <strong>Products</strong></span></span></span>
+									<span class="pull-right">
+										<a class="left button" href="#myCarousel-2" data-slide="prev"></a><a class="right button" href="#myCarousel-2" data-slide="next"></a>
+									</span>
+								</h4>
+								<div id="myCarousel-2" class="myCarousel carousel slide">
+									<div class="carousel-inner">
+										<div class="active item">
+											<ul class="thumbnails">												
+												<li class="span3">
+													<div class="product-box">
+														<span class="sale_tag"></span>
+														<p><a href="product_detail.html"><img src="images/spiro_co1.jpg" alt="" /></a></p>
+														<a href="product_detail.html" class="title">Spiro, 3 in 1 hand held spiralizer</a><br/>
+														<a href="products.html" class="category">mashers-ricers-and-steamers</a>
+														<p class="price">$25.50</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.html"><img src="images/nest_9_plus_co1_1.jpg" alt="" /></a></p>
+														<a href="product_detail.html" class="title">Nesting bowl set </a><br/>
+														<a href="products.html" class="category">weighing-and-measuring</a>
+														<p class="price">$17.55</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.html"><img src="images/y-rack_grn_co1.jpg" alt="" /></a></p>
+														<a href="product_detail.html" class="title">2-tier self-draining dish rackk</a><br/>
+														<a href="products.html" class="category">Disk Rack</a>
+														<p class="price">$25.30</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.html"><img src="images/soapy_sponge_org_co1_2.jpg" alt="" /></a></p>
+														<a href="product_detail.html" class="title">Soap dispensing dish sponge</a><br/>
+														<a href="products.html" class="category">brushes and sponges</a>
+														<p class="price">$25.60</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="item">
+											<ul class="thumbnails">
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.html"><img src="images/chop2pot_lrg_grn_co1_1.jpg" alt="" /></a></p>
+														<a href="product_detail.html" class="title">The original Folding Chopping Board</a><br/>
+														<a href="products.html" class="category">Chopping Board</a>
+														<p class="price">$45.50</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.html"><img src="images/switchscale_co1.jpg" alt="" /></a></p>
+														<a href="product_detail.html" class="title">2 in 1 digital scale</a><br/>
+														<a href="products.html" class="category">weighing-and-measuring</a>
+														<p class="price">$33.50</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.html"><img src="images/elevate-knives---100-collection---group-shot-shadow_1.jpg" alt="" /></a></p>
+														<a href="product_detail.html" class="title">6 pieces kitchen utensils set with stand</a><br/>
+														<a href="products.html" class="category">Kitchen Utensils</a>
+														<p class="price">$45.30</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.html"><img src="images/kitchen-beauteous-kitchen-appliances-.jpg" alt="" /></a></p>
+														<a href="product_detail.html" class="title">kitchen Utensils set</a><br/>
+														<a href="products.html" class="category">KItchen Utensils</a>
+														<p class="price">$250.20</p>
+													</div>
+												</li>																																	
+											</ul>
+										</div>
+									</div>							
+								</div>
+							</div>						
+						</div>
+						<div class="row feature_box">						
+							<div class="span4">
+								<div class="service">
+									<div class="responsive">	
+										<img src="images/kitchen icon.png" alt="" />
+										<h4>MODERN <strong>DESIGN</strong></h4>									
+									</div>
+								</div>
+							</div>
+							<div class="span4">	
+								<div class="service">
+									<div class="customize">			
+										<img src="images/shiping.png" alt="" />
+										<h4>FREE <strong>SHIPPING</strong></h4>
+									</div>
+								</div>
+							</div>
+							<div class="span4">
+								<div class="service">
+									<div class="support">	
+										<img src="images/24.jpg" alt="" />
+										<h4>24/7 LIVE <strong>SUPPORT</strong></h4>
+									</div>
+								</div>
+							</div>	
+						</div>		
+					</div>				
+				</div>
+			</section>
+			<section class="our_client">
+				<h4 class="title"><span class="text">Manufactures</span></h4>
+				<div class="row">					
+					<div class="span2">
+						<a href="#"><img alt="" src="images/aeg brands.PNG"></a>
+					</div>
+					<div class="span2">
+						<a href="#"><img alt="" src="images/neff brands.PNG"></a>
+					</div>
+					<div class="span2">
+						<a href="#"><img alt="" src="images/blanco brands.PNG"></a>
+					</div>
+					<div class="span2">
+						<a href="#"><img alt="" src="images/zanussi brands.PNG"></a>
+					</div>
+					<div class="span2">
+						<a href="#"><img alt="" src="images/stoves brand.PNG"></a>
+					</div>
+					<div class="span2">
+						<a href="#"><img alt="" src="images/images.png"></a>
+					</div>
+				</div>
+			</section>
+			<section id="footer-bar">
+				<div class="row">
+					<div class="span3">
+						<h4>Navigation</h4>
+						<ul class="nav">
+							<li><a href="./index.html">Homepage</a></li>  
+							<li><a href="./about.html">About Us</a></li>
+							<li><a href="./contact.html">Contac Us</a></li>
+							<li><a href="./cart.html">Your Cart</a></li>
+							<li><a href="./register.html">Login</a></li>							
+						</ul>					
+					</div>
+					<div class="span4">
+						<h4>My Account</h4>
+						<ul class="nav">
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Order History</a></li>
+							<li><a href="#">Wish List</a></li>
+							<li><a href="#">Newsletter</a></li>
+						</ul>
+					</div>
+					<div class="span5">
+						<p class="logo"><img src="" class="site_logo" alt=""></p>
+						<br/>
+						<span class="social_icons">
+							<a class="facebook" href="#">Facebook</a>
+							<a class="twitter" href="#">Twitter</a>
+							<a class="skype" href="#">Skype</a>
+							<a class="vimeo" href="#">Vimeo</a>
+						</span>
+					</div>					
+				</div>	
+			</section>
+			<section id="copyright">
+				<span>Copyright 2017 mahirah All right reserved.</span>
+			</section>
+		
+        </div>
+		<script src="js/indexjs5.js"></script>
+		<script src="js/indexjs6.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(document).ready(function() {
+					$('.flexslider').flexslider({
+						animation: "fade",
+						slideshowSpeed: 4000,
+						animationSpeed: 600,
+						controlNav: false,
+						directionNav: true,
+						controlsContainer: ".flex-container" // the container that holds the flexslider
+					});
+				});
+			});
+		</script>
+	
+		</form>
+    </body>
+</html>
+
+
+
+
+
+
